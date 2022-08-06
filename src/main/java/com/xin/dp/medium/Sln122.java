@@ -4,8 +4,8 @@ public class Sln122 {
     public int maxProfit(int[] prices) {
             int n = prices.length;
             int[][] dp = new int[n][2];
-            //  dp[i][0] 表示第 ii 天交易完后手里没有股票的最大利润，
-            //  dp[i][1] 表示第 ii 天交易完后手里持有一支股票的最大利润（ii 从 00 开始）。
+            //  dp[i][0] 表示第 i 天交易完后手里没有股票的最大利润，
+            //  dp[i][1] 表示第 i 天交易完后手里持有一支股票的最大利润（ii 从 00 开始）。
             dp[0][0] = 0;
             dp[0][1] = -prices[0];
             for (int i = 1; i < n; ++i) {
